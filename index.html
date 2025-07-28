@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jornal escolar da instituição A.T.A com notícias, eventos e informações importantes">
+  <meta name="keywords" content="jornal escolar, ATA, escola, educação, notícias escolares">
+  <title>Jornal Escolar A.T.A | Escola de Ensino Fundamental e Médio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span class="logo-main">A.T.A</span>
+        <span class="logo-sub">Educação de Qualidade</span>
+      </div>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#" class="active"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Notícias</a></li>
+          <li><a href="projetos.html"><i class="fas fa-project-diagram"></i> Projetos</a></li>
+          <li><a href="calendario.html"><i class="fas fa-calendar-alt"></i> Calendário</a></li>
+          <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+      <!-- Avisos Importantes -->
+  <section class="section-notices">
+    <div class="container">
+      <h2><i class="fas fa-bullhorn"></i> Avisos Importantes</h2>
+      <div class="notices-container">
+        <div class="notice-card urgent">
+          <div class="notice-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="notice-content">
+            <h3>Recesso Escolar</h3>
+            <p>De 15 a 30 de julho não haverá aulas. Retorno dia 31/07.</p>
+            <span class="notice-date">Publicado em: 10/07/2023</span>
+          </div>
+        </div>
+        
+        <div class="notice-card">
+          <div class="notice-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="notice-content">
+            <h3>Reunião de Pais</h3>
+            <p>Dia 25/07 às 19h no auditório da escola.</p>
+            <span class="notice-date">Publicado em: 05/07/2023</span>
+          </div>
+        </div>
+        
+        <div class="notice-card">
+          <div class="notice-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="notice-content">
+            <h3>Lista de Materiais 2023</h3>
+            <p>Confira a lista completa de materiais para o segundo semestre.</p>
+            <span class="notice-date">Publicado em: 01/07/2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Carrossel de Destaques -->
+    <section class="destaques" aria-labelledby="destaques-heading">
+      <h2 id="destaques-heading"><span class="icon" aria-hidden="true">🌟</span> Destaques</h2>
+      <div class="carrossel-container">
+        <button class="carrossel-btn prev" aria-label="Slide anterior">&#10094;</button>
+        <div class="carrossel" tabindex="0">
+          <article class="destaque-card" style="background-color: #FF9E80;" tabindex="0">
+            <h3>ainda sem projetos</h3>
+            <p>logo mais, novos projetos </p>
+            <a href="projetos.html" class="btn-card" aria-label="Saiba mais sobre o projeto de robótica">Ver projeto</a>
+          </article>
+          <article class="destaque-card" style="background-color: #80DEEA;" tabindex="0">
+  <h3>ainda sem projetos</h3>
+  <p>Confira os projetos incríveis que serão apresentados este ano.</p>
+  <a href="projetos.html" class="btn-card" aria-label="Saiba mais sobre a feira de ciências">Ver projetos</a>
+          </article>
+          <article class="destaque-card" style="background-color: #CE93D8;" tabindex="0">
+            <h3>ainda sem projetos</h3>
+            <p>logo mais, novidades!!</p>
+            <a href="projetos.html" class="btn-card" aria-label="Saiba mais sobre a gincana cultural">Ver equipes</a>
+          </article>
+          <article class="destaque-card" style="background-color: #A5D6A7;" tabindex="0">
+            <h3>interclasses</h3>
+            <p>Campeonatos encerrados</p>
+            <a href="javascript:void(0)" class="btn-card" aria-label="Saiba mais sobre o campeonato esportivo">Ver calendário</a>
+          </article>
+        </div>
+        <button class="carrossel-btn next" aria-label="Próximo slide">&#10095;</button>
+      </div>
+      <div class="carrossel-dots" aria-label="Navegação por pontos do carrossel">
+        <button class="dot active" aria-label="Slide 1" data-index="0"></button>
+        <button class="dot" aria-label="Slide 2" data-index="1"></button>
+        <button class="dot" aria-label="Slide 3" data-index="2"></button>
+        <button class="dot" aria-label="Slide 4" data-index="3"></button>
+      </div>
+    </section>
+
+    <!-- Seção dos Pais -->
+    <section class="pais" aria-labelledby="pais-heading">
+      <div class="pais-content">
+        <h2 id="pais-heading"><span class="icon" aria-hidden="true">📕</span> Espaço Estudantil</h2>
+        <p>Acompanhe a vida do seu filho ativamente na nossa comunidade e [alunos] realizem suas atividades.</p>
+        <div class="pais-buttons">
+          <a href="https://saladofuturo.educacao.sp.gov.br/escolha-de-perfil" target="_blank" rel="noopener" class="btn-saiba-mais" aria-label="Abrir o site oficial[Sala do Futuro] ">Sala do Futuro</a></a>
+          <a href="https://saladofuturo.educacao.sp.gov.br/escolha-de-perfil"  target="_blank" rel="noopener" class="btn-acesse secundario" aria-label="Ver calendário escolar">Calendário Escolar</a>
+        </div>
+      </div>
+      <div class="pais-ilustracao" aria-hidden="true">
+        <div class="ilustracao-item">📚</div>
+        <div class="ilustracao-item">✏️</div>
+        <div class="ilustracao-item">🎒</div>
+      </div>
+    </section>
+
+    <section class="simulados">
+  <h2>📝 Simulados Online</h2>
+  <p>Teste seus conhecimentos e prepare-se para os principais exames!</p>
+
+  <!-- Botão principal -->
+  <button id="toggleSimulados" class="btn-simulado-toggle">Selecionar Matéria</button>
+
+  <!-- Container oculto -->
+  <div id="simuladosContainer" class="simulado-scroll hidden">
+    <div class="simulado-buttons">
+      <button class="btn-simulado" style="background-color: #E53935;">Português</button>
+      <button class="btn-simulado" style="background-color: #8E24AA;">História</button>
+      <button class="btn-simulado" style="background-color: #43A047;">Geografia</button>
+      <button class="btn-simulado" style="background-color: #FB8C00;">Matemática</button>
+      <button class="btn-simulado" style="background-color: #00ACC1;">Física</button>
+      <button class="btn-simulado" style="background-color: #5E35B1;">Inglês</button>
+      <button class="btn-simulado" style="background-color: #6D4C41;">Filosofia</button>
+      <button class="btn-simulado" style="background-color: #00897B;">Biologia</button>
+      <button class="btn-simulado" style="background-color: #26C6DA;">Ed.Finan..</button>
+       <button class="btn-simulado" style="background-color: #78909C;">Artes</button>
+      <button class="btn-simulado" style="background-color: #EC407A;">Química</button>
+    </div>
+  </div>
+       <!-- Modal de Senha -->
+<div id="modalSenha" class="modal-senha" style="display: none;">
+  <div class="modal-content">
+    <h3>🔒 Para prosseguir, digite a senha:</h3>
+    <input type="password" id="senhaInput" placeholder="Digite a senha de 6 dígitos" maxlength="6" />
+    <div class="modal-botoes">
+      <button id="confirmarSenha">Confirmar</button>
+      <button id="cancelarSenha">Cancelar</_></button>
+    </div>
+    <p id="mensagemErro" style="color: red; display: none;">Senha incorreta!</p>
+  </div>
+</div>
+  <p style="font-style: italic; font-size: 14px;">Dica: Os simulados ficam disponíveis das 8h às 20h.</p>
+    </section>
+<section class="mural-avisos">
+  <h2>Avisos</h2>
+  <ul id="lista-avisos">
+    <!-- Avisos serão inseridos aqui pelo script.js -->
+  </ul>
+</section>
+    
+      
+      <div class="eventos-lista">
+        <article class="evento-card" tabindex="0">
+          <div class="evento-data" aria-hidden="true">
+            <span class="dia">20</span>
+            <span class="dia">25</span>
+          </div>
+          <div class="evento-info">
+            <h3>Os melhores destaques da nossa escola</h3>
+            <p class="evento-horario"🪄</p>
+            <p class="evento-descricao">Confira já!</p>
+            <a href="projetos.html" class="btn-evento" aria-label="Mais informações">veja👉🏼</a>
+          </div>
+        </article>
+  
+        </section>
+        <article class="evento-card" tabindex="0">
+          <div class="evento-data" aria-hidden="true">
+            <span class="dia">00</span>
+            <span class="mes">Ago</span>
+          </div>
+          <div class="evento-info">
+            <h3>ainda sem eventos</h3>
+            <p class="evento-horario">00h | logo mais novos eventos</p>
+            <p class="evento-descricao">logo mais novos eventos no card!!.</p>
+            <a href="javascript:void(0)" class="btn-evento" aria-label="Mais informações sobre a feira de ciências">Ver programação</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Jornal A.T.A</h3>
+        <p>Informação e conhecimento para toda comunidade escolar</p>
+        
+      </div>
+      
+  
+      
+      <div class="footer-section">
+     <h3>Redes Sociais e contato</h3>
+  <div class="social-icons">
+    <!-- Instagram pessoal -->
+    <a href="https://www.instagram.com/escolaadolpho?igsh=MXRidTN2ZWtuNDcxOA==" target="_blank" aria-label="Instagram Pessoal">
+      <img src="https://cdn3.emoji.gg/emojis/73238-instagram.png" width="30" height="30" alt="Instagram">
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/jornalata" target="_blank" aria-label="Facebook">
+      <img src="https://cdn3.emoji.gg/emojis/2116-facebook.png" width="35" height="30" alt="Facebook">
+    </a>
+
+    <!-- Gmail -->
+    <a href="mailto:jornalata@escola.com" aria-label="E-mail">
+      <img src="https://cdn3.emoji.gg/emojis/70661-email.png" width="35" height="30" alt="E-mail">
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=551633481147&text=.%0A">
+      <img src="https://cdn3.emoji.gg/emojis/7578-whatsapp.png" width="30px" height="30px" alt="WhatsApp">
+    </a>
+  </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 Jornal Escolar A.T.A - Todos os direitos reservados</p>
+      <div class="footer-creditos">
+       <a  href="https://www.instagram.com/vitorrodrigues._s?igsh=amM4NmJhc213b2Nk" target="_blank" aria-label="Instagram">
+        <p>from vitor</p>
+       </a>
+      </div>
+    </div>
+  </footer>
+
+
+  
+<script>
+  async function enviar() {
+    const input = document.getElementById("mensagem");
+    const resposta = await enviarMensagem(input.value);
+    document.getElementById("resposta").innerText = resposta;
+    input.value = "";
+  }
+</script>
+  <!-- Modal de Aviso -->
+<div class="aviso-modal" id="avisoModal">
+  <div class="aviso-modal-content">
+    <button class="fechar-aviso" id="fecharAviso" aria-label="Fechar aviso">&times;</button>
+    <h3>Aviso Importante!</h3>
+    <p>Este é o nosso novo portal escolar. Aqui você encontrará todas as informações importantes sobre a escola 
+    Adolpho Thomaz de Aquino(A.T.A)</p>
+    <p>Aproveite o novo site,👋!</p>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+            </html>
